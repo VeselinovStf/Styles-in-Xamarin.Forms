@@ -5,13 +5,25 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="WiredBrainCoffee.ExpertApp.Controls.CoffeeCup" >
+    <ContentView.Resources>
+        <Style Class="roundedBoxClass" TargetType="BoxView">
+            <Setter Property="CornerRadius" Value="10"/>
+            <Setter Property="HorizontalOptions" Value="FillAndExpand"/>
+        </Style>
+        <Style Class="roundedBoxBackgroundClassColor" TargetType="BoxView">
+            <Setter Property="BackgroundColor" Value="Gray"/>
+        </Style>
+        <Style Class="roundedBoxBackClassColor" TargetType="BoxView">
+            <Setter Property="BackgroundColor" Value="White"/>
+        </Style>
+    </ContentView.Resources>
   <ContentView.Content>
     <StackLayout Spacing="0">
       <Grid HeightRequest="140" >
         <!--The coffee cup-->
-        <BoxView Margin="0,30,10,30" BackgroundColor="Gray" CornerRadius="10" HorizontalOptions="FillAndExpand"/>
-        <BoxView Margin="0,40,20,40" BackgroundColor="White" CornerRadius="10" HorizontalOptions="FillAndExpand"/>
-        <BoxView Margin="0,0,60,0" BackgroundColor="Gray"/>
+                <BoxView Margin="0,30,10,30" StyleClass="roundedBoxClass,roundedBoxBackgroundClassColor"/>
+                <BoxView Margin="0,40,20,40"  StyleClass="roundedBoxClass,roundedBoxBackClassColor"/>
+                <BoxView Margin="0,0,60,0" StyleClass="roundedBoxBackgroundClassColor"/>
 
         <!--The labels -->
         <StackLayout Spacing="0" Margin="10,0,70,0" VerticalOptions="End">
