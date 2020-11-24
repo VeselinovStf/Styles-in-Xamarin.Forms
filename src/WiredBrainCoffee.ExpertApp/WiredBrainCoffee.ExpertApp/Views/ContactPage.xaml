@@ -36,7 +36,7 @@
 
         <Button Text="Send"
               Command="{Binding SendCommand}"
-              Style="{StaticResource buttonStyle}"/>
+              />
       </StackLayout>
     </ScrollView>
   </ContentPage.Content>

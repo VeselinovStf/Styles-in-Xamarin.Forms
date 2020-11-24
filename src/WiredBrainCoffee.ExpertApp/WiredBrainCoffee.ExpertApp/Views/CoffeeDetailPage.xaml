@@ -78,12 +78,10 @@
                  HorizontalOptions="Center">
       <Button Text="Previous coffee"
               Command="{Binding PreviousCoffeeCommand}"
-              Clicked="Button_Clicked"
-              Style="{StaticResource buttonStyle}"/>
+              Clicked="Button_Clicked"/>
       <Button Text="Next coffee" 
               Command="{Binding NextCoffeeCommand}"
-              Clicked="Button_Clicked"
-              Style="{StaticResource buttonStyle}"/>
+              Clicked="Button_Clicked"/>
     </StackLayout>
   </StackLayout>
 </ContentPage>

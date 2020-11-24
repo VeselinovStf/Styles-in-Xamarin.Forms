@@ -7,7 +7,7 @@
              x:Class="WiredBrainCoffee.ExpertApp.App">
   <Application.Resources>
       
-            <Style x:Key="buttonStyle" TargetType="Button">
+            <Style TargetType="Button">
                 <Setter Property="BackgroundColor" Value="#492B29"/>
                 <Setter Property="TextColor" Value="White"/>
                 <Setter Property="FontSize" Value="18"/>
