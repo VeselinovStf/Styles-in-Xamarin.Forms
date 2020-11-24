@@ -27,6 +27,17 @@
            x:Name="ingredientsLabel" VerticalOptions="EndAndExpand"/>
 
     <Grid BackgroundColor="#DDDDDD" Padding="5,0,5,5" VerticalOptions="StartAndExpand">
+            <Grid.Resources>
+                <Style x:Key="labelTypeStyle" TargetType="Label">
+                    <Setter Property="FontSize" Value="18"/>
+                    <Setter Property="FontAttributes" Value="Bold"/>
+                </Style>
+                <Style x:Key="labelPropStyle" TargetType="Label">
+                    <Setter Property="Grid.Column" Value="1"/>
+                    <Setter Property="FontSize" Value="18"/>
+                    <Setter Property="VerticalOptions" Value="EndAndExpand"/>
+                </Style>
+            </Grid.Resources>
       <Grid.RowDefinitions>
         <RowDefinition Height="Auto"/>
         <RowDefinition Height="Auto"/>
@@ -39,39 +50,31 @@
       </Grid.ColumnDefinitions>
       <Label Text="Milk foam:"
              Grid.Row="0" 
-             FontSize="18" FontAttributes="Bold"/>
+             Style="{StaticResource labelTypeStyle}"/>
       <Label Text="{Binding Coffee.MilkFoamML}" d:Text="25"
              Grid.Row="0" 
-             Grid.Column="1" 
-             FontSize="18"
-             VerticalOptions="EndAndExpand"/>
+              Style="{StaticResource labelPropStyle}"/>
 
       <Label Text="Streamed milk:"
              Grid.Row="1"
              FontSize="18" FontAttributes="Bold"/>
       <Label Text="{Binding Coffee.StreamedMilkML}" d:Text="25"
              Grid.Row="1" 
-             Grid.Column="1"
-             FontSize="18"
-             VerticalOptions="EndAndExpand"/>
+              Style="{StaticResource labelPropStyle}"/>
       
       <Label Text="Hot chocolate:" 
              Grid.Row="2"
-             FontSize="18" FontAttributes="Bold"/>
+             Style="{StaticResource labelTypeStyle}"/>
       <Label Text="{Binding Coffee.HotChocolateML}" d:Text="25"
              Grid.Row="2" 
-             Grid.Column="1" 
-             FontSize="18"
-             VerticalOptions="EndAndExpand"/>
+              Style="{StaticResource labelPropStyle}"/>
 
       <Label Text="Espresso:" 
              Grid.Row="3"
              FontSize="18" FontAttributes="Bold"/>
       <Label Text="{Binding Coffee.EspressoML}" d:Text="25"
              Grid.Row="3" 
-             Grid.Column="1" 
-             FontSize="18"
-             VerticalOptions="EndAndExpand"/>
+             Style="{StaticResource labelPropStyle}"/>
     </Grid>
 
     <StackLayout Orientation="Horizontal" VerticalOptions="EndAndExpand" 
