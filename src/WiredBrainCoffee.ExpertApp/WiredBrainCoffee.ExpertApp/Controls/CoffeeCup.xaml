@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="WiredBrainCoffee.ExpertApp.Controls.CoffeeCup" d:BackgroundColor="White">
+  <ContentView.Content>
+    <StackLayout Spacing="0">
+      <Grid HeightRequest="140" >
+        <!--The coffee cup-->
+        <BoxView Margin="0,30,10,30" BackgroundColor="Gray" CornerRadius="10" HorizontalOptions="FillAndExpand"/>
+        <BoxView Margin="0,40,20,40" BackgroundColor="White" CornerRadius="10" HorizontalOptions="FillAndExpand"/>
+        <BoxView Margin="0,0,60,0" BackgroundColor="Gray"/>
+
+        <!--The labels -->
+        <StackLayout Spacing="0" Margin="10,0,70,0" VerticalOptions="End">
+          <Label Text="Milk foam" 
+             BackgroundColor="#DDDDDD" 
+             HeightRequest="{Binding Coffee.MilkFoamML}" 
+             TextColor="#222222"
+             FontSize="20"
+             FontAttributes="Bold"
+             HorizontalTextAlignment="Center"
+             VerticalTextAlignment="Center"
+             VerticalOptions="EndAndExpand"/>
+          <Label Text="Streamed milk"
+             BackgroundColor="White"
+             HeightRequest="{Binding Coffee.StreamedMilkML}" 
+             TextColor="#222222"
+             FontSize="20"
+             FontAttributes="Bold"
+             HorizontalTextAlignment="Center"
+             VerticalTextAlignment="Center"
+             VerticalOptions="EndAndExpand"/>
+          <Label Text="Hot chocolate" 
+             BackgroundColor="#805a46"
+             HeightRequest="{Binding Coffee.HotChocolateML}"
+             TextColor="White"
+             FontSize="20"
+             FontAttributes="Bold"
+             HorizontalTextAlignment="Center"
+             VerticalTextAlignment="Center"
+             VerticalOptions="EndAndExpand"/>
+          <Label Text="Espresso" 
+             BackgroundColor="#492B29"
+             HeightRequest="{Binding Coffee.EspressoML}"
+             TextColor="White"
+             FontSize="20"
+             FontAttributes="Bold"
+             HorizontalTextAlignment="Center"
+             VerticalTextAlignment="Center" 
+             VerticalOptions="EndAndExpand"/>
+        </StackLayout>
+      </Grid>
+
+      <Label Text="Wired Brain Coffee Cup" Padding="15,2,15,5" Margin="0,0,60,0" FontSize="13" 
+             TextColor="White"
+             BackgroundColor="Gray"/>
+    </StackLayout>
+  </ContentView.Content>
+</ContentView>

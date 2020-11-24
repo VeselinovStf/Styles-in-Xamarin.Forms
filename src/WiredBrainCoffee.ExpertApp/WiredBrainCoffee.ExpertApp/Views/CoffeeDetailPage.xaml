@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:controls="clr-namespace:WiredBrainCoffee.ExpertApp.Controls"
+             mc:Ignorable="d"
+             x:Class="WiredBrainCoffee.ExpertApp.Views.CoffeeDetailPage"
+             Visual="Default"
+             Title="{Binding Coffee.Text}">
+
+  <StackLayout Padding="15">
+
+    <Label Text="{Binding Coffee.Text}" d:Text="Coffee name" 
+           FontSize="30" 
+           x:Name="titleLabel" />
+
+    <controls:CoffeeCup Margin="20,5" VerticalOptions="CenterAndExpand"/>
+    
+    <Label Text="{Binding Coffee.Description}"
+           d:Text="Coffee description that tells the customer what's in the coffee" 
+           FontSize="18"
+           VerticalOptions="CenterAndExpand"/>
+
+    <Label Text="Ingredients in milliliters" 
+           FontSize="20"
+           x:Name="ingredientsLabel" VerticalOptions="EndAndExpand"/>
+
+    <Grid BackgroundColor="#DDDDDD" Padding="5,0,5,5" VerticalOptions="StartAndExpand">
+      <Grid.RowDefinitions>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+      </Grid.RowDefinitions>
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="Auto"/>
+        <ColumnDefinition Width="*"/>
+      </Grid.ColumnDefinitions>
+      <Label Text="Milk foam:"
+             Grid.Row="0" 
+             FontSize="18" FontAttributes="Bold"/>
+      <Label Text="{Binding Coffee.MilkFoamML}" d:Text="25"
+             Grid.Row="0" 
+             Grid.Column="1" 
+             FontSize="18"
+             VerticalOptions="EndAndExpand"/>
+
+      <Label Text="Streamed milk:"
+             Grid.Row="1"
+             FontSize="18" FontAttributes="Bold"/>
+      <Label Text="{Binding Coffee.StreamedMilkML}" d:Text="25"
+             Grid.Row="1" 
+             Grid.Column="1"
+             FontSize="18"
+             VerticalOptions="EndAndExpand"/>
+      
+      <Label Text="Hot chocolate:" 
+             Grid.Row="2"
+             FontSize="18" FontAttributes="Bold"/>
+      <Label Text="{Binding Coffee.HotChocolateML}" d:Text="25"
+             Grid.Row="2" 
+             Grid.Column="1" 
+             FontSize="18"
+             VerticalOptions="EndAndExpand"/>
+
+      <Label Text="Espresso:" 
+             Grid.Row="3"
+             FontSize="18" FontAttributes="Bold"/>
+      <Label Text="{Binding Coffee.EspressoML}" d:Text="25"
+             Grid.Row="3" 
+             Grid.Column="1" 
+             FontSize="18"
+             VerticalOptions="EndAndExpand"/>
+    </Grid>
+
+    <StackLayout Orientation="Horizontal" VerticalOptions="EndAndExpand" 
+                 HorizontalOptions="Center">
+      <Button Text="Previous coffee"
+              Command="{Binding PreviousCoffeeCommand}"
+              Clicked="Button_Clicked"
+              BackgroundColor="#492B29" 
+              TextColor="White" 
+              FontSize="18"
+              Padding="10"/>
+      <Button Text="Next coffee" 
+              Command="{Binding NextCoffeeCommand}"
+              Clicked="Button_Clicked"
+              BackgroundColor="#492B29" 
+              TextColor="White"
+              FontSize="18"
+              Padding="10"/>
+    </StackLayout>
+  </StackLayout>
+</ContentPage>

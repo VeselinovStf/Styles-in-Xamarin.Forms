@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="WiredBrainCoffee.ExpertApp.Views.AboutPage"
+             xmlns:vm="clr-namespace:WiredBrainCoffee.ExpertApp.ViewModels"
+             Title="{Binding Title}">
+  <ContentPage.BindingContext>
+    <vm:AboutViewModel />
+  </ContentPage.BindingContext>
+
+  <Grid>
+    <Grid.RowDefinitions>
+      <RowDefinition Height="Auto" />
+      <RowDefinition Height="*" />
+    </Grid.RowDefinitions>
+    <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="Fill">
+      <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center">
+        <ContentView Padding="0,20,0,20" VerticalOptions="FillAndExpand">
+          <Image Source="wiredbraincoffee_logo.png" VerticalOptions="Center" HeightRequest="212"/>
+        </ContentView>
+      </StackLayout>
+    </StackLayout>
+    <ScrollView Grid.Row="1">
+      <StackLayout Orientation="Vertical" Spacing="10">
+        <Label FontSize="18" Text="Wired Brain Coffee Expert 1.0" />
+        <Label FontSize="18" Text="This app was written to explain you our coffees."/>
+        <Label FontSize="18" Text="If you have any questions, please contact us."/>
+        <Label FontSize="18" Text="Your wired brain coffee team"/>
+        <Button Margin="0,10,0,0" Text="Visit our web page"
+              Command="{Binding OpenWebCommand}"
+              BackgroundColor="#492B29" 
+              TextColor="White"
+              FontSize="18"
+              Padding="10"/>
+      </StackLayout>
+    </ScrollView>
+  </Grid>
+
+</ContentPage>

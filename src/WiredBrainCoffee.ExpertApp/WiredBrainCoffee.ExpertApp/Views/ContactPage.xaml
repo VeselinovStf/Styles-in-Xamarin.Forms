@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:vm="clr-namespace:WiredBrainCoffee.ExpertApp.ViewModels"
+             mc:Ignorable="d"
+             x:Class="WiredBrainCoffee.ExpertApp.Views.ContactPage"
+             Title="Contact us">
+  <ContentPage.BindingContext>
+    <vm:ContactViewModel/>
+  </ContentPage.BindingContext>
+  <ContentPage.Content>
+    <ScrollView>
+      <StackLayout Spacing="20" Padding="15">
+
+        <Label Text="Contact us"
+           FontSize="30" FontAttributes="Bold"/>
+
+        <Label Text="Do you have a question or feedback? Send us a message."
+             FontSize="18"></Label>
+
+        <Entry Placeholder="Name" 
+             FontAttributes="Bold"
+             BackgroundColor="#e8d0c3"
+             PlaceholderColor="#805a46"
+             TextColor="Black"/>
+        <Entry Placeholder="Email" 
+             BackgroundColor="#e8d0c3"
+             PlaceholderColor="#805a46"
+             TextColor="Black"/>
+        <Editor Placeholder="Your message" 
+              AutoSize="TextChanges"
+             BackgroundColor="#e8d0c3"
+             PlaceholderColor="#805a46"
+             TextColor="Black"/>
+
+        <Button Text="Send"
+              Command="{Binding SendCommand}"
+              BackgroundColor="#492B29" 
+              TextColor="White"
+              FontSize="18"
+              Padding="10"/>
+      </StackLayout>
+    </ScrollView>
+  </ContentPage.Content>
+</ContentPage>
