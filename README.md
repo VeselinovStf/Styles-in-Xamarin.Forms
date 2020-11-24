@@ -1,6 +1,8 @@
 # Styles-in-Xamarin.Forms
 Pluralsight "Working with Styles in Xamarin.Forms Applications" course repository
 
+![project image]()
+
 ### Course Info
 
 - This course teaches you how to reuse user interface code in your Xamarin.Forms applications with XAML Styles and with Cascading Style Sheets (CSS).
@@ -24,4 +26,4 @@ Pluralsight "Working with Styles in Xamarin.Forms Applications" course repositor
 
 ## Status
 
-- Learning
+- Complete
