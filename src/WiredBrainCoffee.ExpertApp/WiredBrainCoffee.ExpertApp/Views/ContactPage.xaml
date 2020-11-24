@@ -10,7 +10,7 @@
     <vm:ContactViewModel/>
   </ContentPage.BindingContext>
     <ContentPage.Resources>
-        <Style TargetType="InputView" x:Key="inputViewBaseStyle">
+        <Style TargetType="InputView"  ApplyToDerivedTypes="True">
             <Setter Property="BackgroundColor" Value="#e8d0c3"/>
             <Setter Property="PlaceholderColor" Value="#805a46"/>
             <Setter Property="TextColor" Value="Black"/>
@@ -28,12 +28,12 @@
 
         <Entry Placeholder="Name" 
              FontAttributes="Bold"
-             Style="{StaticResource inputViewBaseStyle}"/>
+             />
         <Entry Placeholder="Email" 
-             Style="{StaticResource inputViewBaseStyle}"/>
+             />
         <Editor Placeholder="Your message" 
               AutoSize="TextChanges"
-             Style="{StaticResource inputViewBaseStyle}"/>
+             />
 
         <Button Text="Send"
               Command="{Binding SendCommand}"

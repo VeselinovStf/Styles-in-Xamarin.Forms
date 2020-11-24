@@ -4,7 +4,7 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="WiredBrainCoffee.ExpertApp.Controls.CoffeeCup" d:BackgroundColor="White">
+             x:Class="WiredBrainCoffee.ExpertApp.Controls.CoffeeCup" >
   <ContentView.Content>
     <StackLayout Spacing="0">
       <Grid HeightRequest="140" >
