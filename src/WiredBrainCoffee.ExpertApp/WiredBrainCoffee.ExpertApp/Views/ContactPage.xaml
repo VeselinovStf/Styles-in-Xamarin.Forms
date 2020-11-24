@@ -6,7 +6,7 @@
              mc:Ignorable="d"
              x:Class="WiredBrainCoffee.ExpertApp.Views.ContactPage"
              Title="Contact us">
-  <ContentPage.BindingContext>
+    <ContentPage.BindingContext>
     <vm:ContactViewModel/>
   </ContentPage.BindingContext>
     <ContentPage.Resources>
@@ -14,6 +14,9 @@
             <Setter Property="BackgroundColor" Value="#e8d0c3"/>
             <Setter Property="PlaceholderColor" Value="#805a46"/>
             <Setter Property="TextColor" Value="Black"/>
+        </Style>
+        <Style x:Key="nameEntryStyle" TargetType="Entry" CanCascade="True">
+            <Setter Property="FontAttributes" Value="Bold"/>
         </Style>
     </ContentPage.Resources>
   <ContentPage.Content>
@@ -26,10 +29,13 @@
         <Label Text="Do you have a question or feedback? Send us a message."
              FontSize="18"></Label>
 
-        <Entry Placeholder="Name" 
-             FontAttributes="Bold"
+        <Entry Placeholder="First Name" 
+             Style="{StaticResource nameEntryStyle}"
              />
-        <Entry Placeholder="Email" 
+         <Entry Placeholder="Last Name" 
+             Style="{StaticResource nameEntryStyle}"
+             />
+                <Entry Placeholder="Email" 
              />
         <Editor Placeholder="Your message" 
               AutoSize="TextChanges"
