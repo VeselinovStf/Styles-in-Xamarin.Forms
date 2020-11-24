@@ -1,7 +1,7 @@
 # Styles-in-Xamarin.Forms
 Pluralsight "Working with Styles in Xamarin.Forms Applications" course repository
 
-![project image]()
+![project image](https://github.com/VeselinovStf/Styles-in-Xamarin.Forms/blob/main/repoImges/before.bmp)
 
 ### Course Info
 
