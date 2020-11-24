@@ -28,13 +28,14 @@
 
     <Grid BackgroundColor="#DDDDDD" Padding="5,0,5,5" VerticalOptions="StartAndExpand">
             <Grid.Resources>
-                <Style x:Key="labelTypeStyle" TargetType="Label">
+                <Style x:Key="labelBaseFontSizeStyle" TargetType="Label">
                     <Setter Property="FontSize" Value="18"/>
+                </Style>
+                <Style x:Key="labelTypeStyle" TargetType="Label" BasedOn="{StaticResource labelBaseFontSizeStyle}">
                     <Setter Property="FontAttributes" Value="Bold"/>
                 </Style>
-                <Style x:Key="labelPropStyle" TargetType="Label">
+                <Style x:Key="labelPropStyle" TargetType="Label" BasedOn="{StaticResource labelBaseFontSizeStyle}">
                     <Setter Property="Grid.Column" Value="1"/>
-                    <Setter Property="FontSize" Value="18"/>
                     <Setter Property="VerticalOptions" Value="EndAndExpand"/>
                 </Style>
             </Grid.Resources>
