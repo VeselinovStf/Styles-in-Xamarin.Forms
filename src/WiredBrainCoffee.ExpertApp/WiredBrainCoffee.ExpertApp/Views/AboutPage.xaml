@@ -30,10 +30,10 @@
     </StackLayout>
     <ScrollView Grid.Row="1">
       <StackLayout Orientation="Vertical" Spacing="10">
-        <Label FontSize="18" Text="Wired Brain Coffee Expert 1.0" />
-        <Label FontSize="18" Text="This app was written to explain you our coffees."/>
-        <Label FontSize="18" Text="If you have any questions, please contact us."/>
-        <Label FontSize="18" Text="Your wired brain coffee team"/>
+        <Label StyleId="masterLabel" Text="Wired Brain Coffee Expert 1.0" />
+        <Label Text="This app was written to explain you our coffees."/>
+        <Label Text="If you have any questions, please contact us."/>
+        <Label StyleClass="classAtribute" Text="Your wired brain coffee team"/>
         <Button Margin="0,10,0,0" Text="Visit our web page"
               Command="{Binding OpenWebCommand}"
               />

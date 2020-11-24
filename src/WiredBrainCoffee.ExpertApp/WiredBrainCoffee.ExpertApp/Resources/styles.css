@@ -1,3 +1,23 @@
 ﻿^contentpage{
     background-color:gray;
 }
+
+label{
+    color:white;
+    font-size:18;
+}
+
+#masterLabel {
+    color: black;
+    font-size: 25;
+}
+
+.classAtribute{
+    color:green;
+    font-style:italic
+}
+
+stacklayout  > label {
+    padding:30;
+    text-align:center;
+}
