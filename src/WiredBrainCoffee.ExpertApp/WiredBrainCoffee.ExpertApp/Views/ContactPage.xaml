@@ -9,6 +9,13 @@
   <ContentPage.BindingContext>
     <vm:ContactViewModel/>
   </ContentPage.BindingContext>
+    <ContentPage.Resources>
+        <Style TargetType="InputView" x:Key="inputViewBaseStyle">
+            <Setter Property="BackgroundColor" Value="#e8d0c3"/>
+            <Setter Property="PlaceholderColor" Value="#805a46"/>
+            <Setter Property="TextColor" Value="Black"/>
+        </Style>
+    </ContentPage.Resources>
   <ContentPage.Content>
     <ScrollView>
       <StackLayout Spacing="20" Padding="15">
@@ -21,18 +28,12 @@
 
         <Entry Placeholder="Name" 
              FontAttributes="Bold"
-             BackgroundColor="#e8d0c3"
-             PlaceholderColor="#805a46"
-             TextColor="Black"/>
+             Style="{StaticResource inputViewBaseStyle}"/>
         <Entry Placeholder="Email" 
-             BackgroundColor="#e8d0c3"
-             PlaceholderColor="#805a46"
-             TextColor="Black"/>
+             Style="{StaticResource inputViewBaseStyle}"/>
         <Editor Placeholder="Your message" 
               AutoSize="TextChanges"
-             BackgroundColor="#e8d0c3"
-             PlaceholderColor="#805a46"
-             TextColor="Black"/>
+             Style="{StaticResource inputViewBaseStyle}"/>
 
         <Button Text="Send"
               Command="{Binding SendCommand}"
