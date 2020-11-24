@@ -6,7 +6,12 @@
              mc:Ignorable="d"
              x:Class="WiredBrainCoffee.ExpertApp.Views.AboutPage"
              xmlns:vm="clr-namespace:WiredBrainCoffee.ExpertApp.ViewModels"
-             Title="{Binding Title}">
+             xmlns:resouces="clr-namespace:WiredBrainCoffee.ExpertApp.Resources;assembly=WiredBrainCoffee.ExpertApp"
+             Title="{Binding Title}"
+             >
+    <ContentPage.Resources>
+        <StyleSheetExtension Source="/Resources/styles.css"/>
+    </ContentPage.Resources>
   <ContentPage.BindingContext>
     <vm:AboutViewModel />
   </ContentPage.BindingContext>
