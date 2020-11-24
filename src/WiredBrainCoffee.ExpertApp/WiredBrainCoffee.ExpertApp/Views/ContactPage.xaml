@@ -36,10 +36,7 @@
 
         <Button Text="Send"
               Command="{Binding SendCommand}"
-              BackgroundColor="#492B29" 
-              TextColor="White"
-              FontSize="18"
-              Padding="10"/>
+              Style="{StaticResource buttonStyle}"/>
       </StackLayout>
     </ScrollView>
   </ContentPage.Content>

@@ -31,10 +31,7 @@
         <Label FontSize="18" Text="Your wired brain coffee team"/>
         <Button Margin="0,10,0,0" Text="Visit our web page"
               Command="{Binding OpenWebCommand}"
-              BackgroundColor="#492B29" 
-              TextColor="White"
-              FontSize="18"
-              Padding="10"/>
+              Style="{StaticResource buttonStyle}"/>
       </StackLayout>
     </ScrollView>
   </Grid>

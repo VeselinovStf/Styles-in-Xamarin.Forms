@@ -8,14 +8,7 @@
              x:Class="WiredBrainCoffee.ExpertApp.Views.CoffeeDetailPage"
              Visual="Default"
              Title="{Binding Coffee.Text}">
-    <ContentPage.Resources>
-        <Style x:Key="buttonStyle" TargetType="Button">
-            <Setter Property="BackgroundColor" Value="#492B29"/>
-            <Setter Property="TextColor" Value="White"/>
-            <Setter Property="FontSize" Value="18"/>
-            <Setter Property="Padding" Value="10"/>
-        </Style>
-    </ContentPage.Resources>
+   
   <StackLayout Padding="15">
 
     <Label Text="{Binding Coffee.Text}" d:Text="Coffee name" 
