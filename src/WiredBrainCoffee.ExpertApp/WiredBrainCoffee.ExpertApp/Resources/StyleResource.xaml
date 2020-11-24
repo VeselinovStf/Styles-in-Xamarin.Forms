@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResourceDictionary xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WiredBrainCoffee.ExpertApp.Resources.StyleResource">
+    <Style TargetType="Button">
+        <Setter Property="BackgroundColor" Value="#492B29"/>
+        <Setter Property="TextColor" Value="White"/>
+        <Setter Property="FontSize" Value="18"/>
+        <Setter Property="Padding" Value="10"/>
+    </Style>
+</ResourceDictionary>
