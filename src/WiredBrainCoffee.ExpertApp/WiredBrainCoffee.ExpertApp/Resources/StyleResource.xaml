@@ -8,4 +8,7 @@
         <Setter Property="FontSize" Value="18"/>
         <Setter Property="Padding" Value="10"/>
     </Style>
+    <Style TargetType="Label"
+           BaseResourceKey="TitleStyle"
+           />
 </ResourceDictionary>
