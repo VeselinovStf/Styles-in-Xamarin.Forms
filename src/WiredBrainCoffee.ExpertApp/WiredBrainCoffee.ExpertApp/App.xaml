@@ -17,6 +17,8 @@
         <!--<Style TargetType="ContentPage" ApplyToDerivedTypes="True">
             <Setter Property="BackgroundColor" Value="#DDFFDD"/>
         </Style>-->
+
+        <Color x:Key="pageBackGroundColor">White</Color>
       
     </Application.Resources>
 </Application>

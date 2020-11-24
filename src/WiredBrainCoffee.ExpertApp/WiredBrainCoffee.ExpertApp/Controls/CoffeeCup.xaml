@@ -14,7 +14,7 @@
             <Setter Property="BackgroundColor" Value="Gray"/>
         </Style>
         <Style Class="roundedBoxBackClassColor" TargetType="BoxView">
-            <Setter Property="BackgroundColor" Value="White"/>
+            <Setter Property="BackgroundColor" Value="{StaticResource pageBackGroundColor}"/>
         </Style>
     </ContentView.Resources>
   <ContentView.Content>
