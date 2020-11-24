@@ -8,7 +8,13 @@
         <Setter Property="FontSize" Value="18"/>
         <Setter Property="Padding" Value="10"/>
     </Style>
-    <Style TargetType="Label"
-           BaseResourceKey="TitleStyle"
-           />
+    <Style TargetType="Label" BaseResourceKey="TitleStyle"/>
+    <Style x:Key="boldLabelStyle" TargetType="Label">
+        <Setter Property="FontAttributes" Value="Bold"/>
+        <Setter Property="TextColor" Value="Gray"/>
+    </Style>
+    <Style x:Key="italicLabelStyle" TargetType="Label">
+        <Setter Property="FontAttributes" Value="Italic"/>
+        <Setter Property="TextColor" Value="DimGray"/>
+    </Style>
 </ResourceDictionary>

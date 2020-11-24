@@ -13,7 +13,7 @@
 
     <Label Text="{Binding Coffee.Text}" d:Text="Coffee name" 
            FontSize="30" 
-           x:Name="titleLabel" />
+           Style="{DynamicResource hedlineStyle}" />
 
     <controls:CoffeeCup Margin="20,5" VerticalOptions="CenterAndExpand"/>
     
@@ -24,7 +24,7 @@
 
     <Label Text="Ingredients in milliliters" 
            FontSize="20"
-           x:Name="ingredientsLabel" VerticalOptions="EndAndExpand"/>
+           Style="{DynamicResource hedlineStyle}" VerticalOptions="EndAndExpand"/>
 
     <Grid BackgroundColor="#DDDDDD" Padding="5,0,5,5" VerticalOptions="StartAndExpand">
             <Grid.Resources>
